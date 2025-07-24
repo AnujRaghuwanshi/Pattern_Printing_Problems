@@ -1,3 +1,17 @@
+Enter no.of rows
+5
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+ 
+//CPP Implementation
 #include<iostream>
 using namespace std;
  
@@ -5,13 +19,14 @@ int main(){
     int row;
     cout<<"Enter no.of rows\n";
     cin>>row;
-
+    // Upper half
     for(int i=1;i<=row;i++){
         for(int j=1;j<=i;j++){
             cout<<"*";
         }
         cout<<endl;
     }
+    // Lower Half
     for(int i=row-1;i>=1;i--){
         for(int j=1;j<=i;j++){
             cout<<"*";
@@ -19,4 +34,35 @@ int main(){
         cout<<endl;
     }
     return 0;
+}
+
+
+//Java Implementation
+import java.util.Scanner;
+
+public class HalfDiamondPattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter number of rows:");
+        int row = scanner.nextInt();
+
+        // Upper half
+        for (int i = 1; i <= row; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Lower half
+        for (int i = row - 1; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
 }
