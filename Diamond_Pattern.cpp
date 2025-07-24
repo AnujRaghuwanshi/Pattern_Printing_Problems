@@ -1,3 +1,17 @@
+Enter no.of rows
+5
+     *
+    ***
+   *****
+  *******
+ *********
+  *******
+   *****
+    ***
+     *
+
+//C++ Implementation    
+
 #include <iostream>
 using namespace std;
 int main()
@@ -5,26 +19,31 @@ int main()
     int row;
     cout << "Enter no.of rows\n";
     cin >> row;
-
+    
+    // Top half of diamond (including middle row)
     for (int i = 0; i < row; i++)
     {
+         // Print spaces
         for (int k = 0; k < (row - i); k++)
         {
             cout << " ";
         }
+        // Print stars
         for (int j = 0; j < 2 * i + 1; j++)
         {
             cout << "*";
         }
         cout << endl;
     }
-
+    // Bottom half of diamond
     for (int i = 0; i < row - 1; i++)
     {
+        // Print spaces
         for (int k = 0; k <= i + 1; k++)
         {
             cout << " ";
         }
+        // Print stars
         for (int j = 0; j < 2 * (row - i - 1) - 1; j++)
         {
             cout << "*";
@@ -33,4 +52,45 @@ int main()
     }
 
     return 0;
+}
+
+//Java Implementation
+
+import java.util.Scanner;
+
+public class DiamondPattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter number of rows:");
+        int row = scanner.nextInt();
+
+        // Top half of diamond (including middle row)
+        for (int i = 0; i < row; i++) {
+            // Print spaces
+            for (int k = 0; k < (row - i); k++) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Bottom half of diamond
+        for (int i = 0; i < row - 1; i++) {
+            // Print spaces
+            for (int k = 0; k <= i + 1; k++) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int j = 0; j < 2 * (row - i - 1) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
 }
