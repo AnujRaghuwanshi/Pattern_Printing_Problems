@@ -78,7 +78,6 @@ public class MirroredHalfDiamond {
             }
             System.out.println();
         }
-
         scanner.close();
     }
 }
