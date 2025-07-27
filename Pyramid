@@ -6,7 +6,8 @@ Enter no.of row
   *******
  *********
 
-//CPP Implementation    
+//CPP Implementation
+
 #include<iostream>
 using namespace std;
 
@@ -30,6 +31,7 @@ int main(){
 }
 
 //JAVA Implementation
+
 import java.util.Scanner;
 
 public class CenteredStarPyramid {
@@ -51,7 +53,6 @@ public class CenteredStarPyramid {
 
             System.out.println();
         }
-
         scanner.close();
     }
 }
