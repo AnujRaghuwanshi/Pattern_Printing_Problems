@@ -73,7 +73,6 @@ public class HollowPyramid {
                     System.out.print(" ");
                 }
             }
-
             System.out.println();
         }
 
