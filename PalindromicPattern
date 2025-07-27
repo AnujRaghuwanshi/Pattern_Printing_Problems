@@ -5,6 +5,7 @@
 5 4 3 2 1 2 3 4 5 
 
 // C++Implementation
+
 #include <iostream>
 using namespace std;
 
@@ -30,6 +31,7 @@ int main() {
 
 
 // Java Implementation
+
 package Pattern;
 
 public class PalindromicPattern {
