@@ -23,7 +23,7 @@ int main()
     // Top half of diamond (including middle row)
     for (int i = 0; i < row; i++)
     {
-         // Print spaces
+        // Print spaces
         for (int k = 0; k < (row - i); k++)
         {
             cout << " ";
