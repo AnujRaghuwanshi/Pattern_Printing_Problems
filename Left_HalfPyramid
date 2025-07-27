@@ -55,7 +55,6 @@ public class CenteredHalfPyramid {
 
             System.out.println();
         }
-
         scanner.close();
     }
 }
