@@ -17,7 +17,7 @@ This repository serves as a handy reference and learning tool for:
 
 💻 Practicing C++ and Java syntax
 
-🧪 Preparing for interviews or coding assessme
+🧪 Preparing for interviews or coding assessment
 
 # ⭐️ If you find this helpful, consider starring the repo!
 
